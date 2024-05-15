@@ -1,0 +1,30 @@
+{
+  "name": "magicoon_react",
+  "version": "1.0.9",
+  "description": "Magicoon React",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf ./dist && tsc -p . && cp package.json ./dist",
+    "package": "cd dist && npm publish"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0",
+    "react-dom": "^16.8.0 || ^17.0.0 || ^18.0.0"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/storatech"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com:storatech/magicoon.git",
+    "directory": "magicoon_react"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/react": "^18.2.57",
+    "tsup": "^8.0.2",
+    "typescript": "^5.3.3"
+  }
+}
