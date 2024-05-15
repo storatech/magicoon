@@ -1,6 +1,6 @@
 name: magicoon_flutter
 description: "Magicoon icon set for Flutter."
-version: 1.0.10
+version: 1.0.11
 homepage: https://github.com/storatech/magicoon_flutter
 
 environment:
@@ -20,10 +20,10 @@ flutter:
   fonts:
     - family: "Magicoon Filled"
       fonts:
-        - asset: fonts/icons/Magicoon-filled.ttf
+        - asset: fonts/Magicoon-filled.ttf
     - family: "Magicoon Regular"
       fonts:
-        - asset: fonts/icons/Magicoon-regular.ttf
+        - asset: fonts/Magicoon-regular.ttf
     - family: "Magicoon Light"
       fonts:
-        - asset: fonts/icons/Magicoon-light.ttf
+        - asset: fonts/Magicoon-light.ttf
