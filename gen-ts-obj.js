@@ -3,7 +3,7 @@
 // Usage:
 // node gen-ts-obj <variantCount> <variantJson : 0> <variantName : 0> <variantJson : 1> <variantName : 1> ... <outputFile>
 
-const fs = require('fs')
+import fs from 'fs'
 
 const variantCount = parseInt(process.argv[2]) ?? 1
 
@@ -68,7 +68,7 @@ const write = () => {
   value += JSON.stringify(variants, null, 2)
 
   value += footer
-  
+
   return value
 }
 

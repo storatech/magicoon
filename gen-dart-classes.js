@@ -3,7 +3,7 @@
 // Usage:
 // node gen-dart-classes.js <json-defs> <fontName> <pkgName> <className> <outputFile>
 
-const fs = require('fs')
+import fs from 'fs'
 
 const file = process.argv[2]
 const fontName = process.argv[3]
