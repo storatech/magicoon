@@ -1,0 +1,9 @@
+node_modules
+fonts
+icons
+magicoon_flutter
+magicoon_react
+gen.sh
+gen-ts-obj.ks
+gen-dart-classes.js
+update-ver.js

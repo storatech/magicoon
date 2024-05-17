@@ -12,7 +12,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rm -rf ./dist && tsup magicoon_react --format esm --dts --no-splitting",
-    "package": "cd dist && npm publish"
+    "package": "npm publish"
   },
   "peerDependencies": {
     "react": "^16.8.0 || ^17.0.0 || ^18.0.0",
