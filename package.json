@@ -1,6 +1,6 @@
 {
   "name": "@storatech/magicoon_react",
-  "version": "1.0.18",
+  "version": "1.0.20",
   "description": "Magicoon React",
   "type": "module",
   "main": "dist/cjs/index.cjs",
@@ -13,7 +13,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rm -rf ./dist && tsup magicoon_react --format esm,cjs,iife",
+    "build": "rm -rf ./dist && tsup magicoon_react --format esm,cjs,iife --dts",
     "package": "cd dist && npm publish"
   },
   "peerDependencies": {
