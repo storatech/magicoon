@@ -57,7 +57,7 @@ export const codePoints = `
 const footer = ` as const;
 
 export type IconVariant = keyof typeof codePoints;
-export type IconKey = typeof codePoints[IconVariant];
+export type IconKey = keyof typeof codePoints[IconVariant];
 export default codePoints
 `
 
