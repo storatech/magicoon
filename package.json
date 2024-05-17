@@ -1,19 +1,17 @@
 {
   "name": "@storatech/magicoon_react",
-  "version": "1.0.22",
+  "version": "1.0.23",
   "description": "Magicoon React",
   "type": "module",
-  "main": "dist/index.cjs",
-  "module": "dist/index.mjs",
+  "main": "dist/index.js",
   "exports": {
     ".": {
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.cjs"
+      "import": "./dist/index.js"
     }
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rm -rf ./dist && tsup magicoon_react --format esm,cjs --dts --no-splitting",
+    "build": "rm -rf ./dist && tsup magicoon_react --format esm --dts --no-splitting",
     "package": "cd dist && npm publish"
   },
   "peerDependencies": {
