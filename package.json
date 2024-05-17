@@ -24,7 +24,7 @@
   "repository": {
     "type": "git",
     "url": "ssh://git@github.com:storatech/magicoon.git",
-    "directory": "@storatech/magicoon_react"
+    "directory": "@storatech/magicoon"
   },
   "author": "sadespresso",
   "license": "ISC",
