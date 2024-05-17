@@ -17,7 +17,7 @@ cp -r fonts/*.ttf ./magicoon_flutter/fonts/
 mv fonts/*.dart ./magicoon_flutter/lib/src/
 
 # node gen-ts-obj <variantCount> <variantJson : 0> <variantName : 0> <variantJson : 1> <variantName : 1> ... <outputFile>
-node gen-ts-obj 3 "./fonts/Magicoon-filled.json" "filled" "./fonts/Magicoon-light.json" "light" "./fonts/Magicoon-regular.json" "regular" "./magicoon_react/src/codepoints.ts"
+node gen-ts-obj 3 "./fonts/Magicoon-filled.json" "filled" "./fonts/Magicoon-light.json" "light" "./fonts/Magicoon-regular.json" "regular" "./magicoon_react/codepoints.ts"
 
 node update-ver
 
