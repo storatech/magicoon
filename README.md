@@ -2,7 +2,7 @@
 
 ## Prerequisites
 
-- Node (and npm)
+- Node 18+ (and npm)
 - Fantasticon
 
 ## Install
@@ -16,10 +16,7 @@ npm install -g fantasticon
 ## Generate
 
 ```bash
-mkdir fonts
-fantasticon ./icons/filled -o fonts -t ttf -g '' -n "Magicoon-filled"
-fantasticon ./icons/regular -o fonts -t ttf -g '' -n "Magicoon-regular"
-fantasticon ./icons/outline -o fonts -t ttf -g '' -n "Magicoon-outline"
+./gen.sh
 ```
 
 ## Dart source generation utils

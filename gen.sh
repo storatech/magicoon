@@ -22,7 +22,6 @@ node gen-ts-obj 3 "./fonts/Magicoon-filled.json" "filled" "./fonts/Magicoon-ligh
 node update-ver
 
 cd magicoon_flutter
-flutter pub get
 
 cd ../magicoon_react
 npm install
