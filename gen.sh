@@ -3,13 +3,13 @@ rm fonts/*
 
 # node gen classes <json-defs> <fontName> <packageName> <className> <outputFile>
 
-fantasticon ./icons/filled -o fonts -t ttf -g json -n "Magicoon-filled"
+fantasticon ./icons/filled -o fonts -t ttf -g json -n "Magicoon-filled" --normalize
 node gen-dart-classes "fonts/Magicoon-filled.json" "Magicoon Filled" "magicoon_flutter" "MagicoonFilled" "fonts/magicoon_filled.dart"
 
-fantasticon ./icons/regular -o fonts -t ttf -g json -n "Magicoon-regular"
+fantasticon ./icons/regular -o fonts -t ttf -g json -n "Magicoon-regular" --normalize
 node gen-dart-classes "fonts/Magicoon-regular.json" "Magicoon Regular" "magicoon_flutter" "MagicoonRegular" "fonts/magicoon_regular.dart"
 
-fantasticon ./icons/light -o fonts -t ttf -g json -n "Magicoon-light"
+fantasticon ./icons/light -o fonts -t ttf -g json -n "Magicoon-light" --normalize
 node gen-dart-classes "fonts/Magicoon-light.json" "Magicoon Light" "magicoon_flutter" "MagicoonLight" "fonts/magicoon_light.dart"
 
 cp -r fonts/*.ttf ../fonts/icons/
