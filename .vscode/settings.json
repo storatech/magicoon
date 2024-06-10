@@ -1,7 +1,3 @@
 {
-  "standard.engine": "ts-standard",
-  "standard.workingDirectories": [
-    "magicoon_react"
-  ],
   "typescript.tsdk": "node_modules/typescript/lib"
 }
