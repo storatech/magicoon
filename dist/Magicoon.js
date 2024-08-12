@@ -3726,7 +3726,10 @@ var defaultStyle = {
     display: "inline-block",
     verticalAlign: "middle",
     lineHeight: "1",
-    whiteSpace: "nowrap"
+    whiteSpace: "nowrap",
+    minWidth: "1em",
+    width: "1em",
+    maxWidth: "1em"
 };
 var filledStyle = _object_spread_props(_object_spread({}, defaultStyle), {
     fontFamily: "Magicoon Filled"
