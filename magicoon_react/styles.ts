@@ -8,6 +8,9 @@ const defaultStyle = {
   verticalAlign: "middle",
   lineHeight: "1",
   whiteSpace: "nowrap",
+  minWidth: '1em',
+  width: '1em',
+  maxWidth: '1em',
 };
 
 const filledStyle = {
