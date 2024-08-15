@@ -1,0 +1,23 @@
+[data-magicoon] {
+    font-family: "Magicoon Regular";
+    font-size: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+    white-space: nowrap;
+    min-width: 1em;
+    width: 1em;
+    max-width: 1em;
+}
+
+[data-magicoon-variant="filled"] {
+    font-family: "Magicoon Filled";
+}
+
+[data-magicoon-variant="regular"] {
+    font-family: "Magicoon Regular";
+}
+
+[data-magicoon-variant="light"] {
+    font-family: "Magicoon Light";
+}

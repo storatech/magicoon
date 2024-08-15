@@ -1,14 +1,12 @@
 import React, { FunctionComponent } from "react";
 import { MagicoonProps } from "./types";
-import { IconKey, IconVariant, codePoints } from "./codepoints";
 import { getValue } from "./get-string";
-import styles from "./styles";
 
 const MagicoonFilled: FunctionComponent<Omit<MagicoonProps, "variant">> = ({ icon, className }) => {
   const value = getValue("filled", icon);
 
   return (
-    <span style={styles.filled} className={className}>
+    <span data-magicoon data-magicoon-variant="filled" className={className}>
       {value}
     </span>
   );
@@ -17,7 +15,7 @@ const MagicoonRegular: FunctionComponent<Omit<MagicoonProps, "variant">> = ({ ic
   const value = getValue("regular", icon);
 
   return (
-    <span style={styles.regular} className={className}>
+    <span data-magicoon data-magicoon-variant="regular" className={className}>
       {value}
     </span>
   );
@@ -26,13 +24,13 @@ const MagicoonLight: FunctionComponent<Omit<MagicoonProps, "variant">> = ({ icon
   const value = getValue("light", icon);
 
   return (
-    <span style={styles.light} className={className}>
+    <span data-magicoon data-magicoon-variant="light" className={className}>
       {value}
     </span>
   );
 };
 
-const Magicoon: FunctionComponent<MagicoonProps> = ({ variant, icon, className }) => {
+const Magicoon: FunctionComponent<MagicoonProps> = ({ variant = "regular", icon, className }) => {
   switch (variant) {
     case "filled":
       return <MagicoonFilled icon={icon} className={className} />;

@@ -1,7 +1,7 @@
 import { IconKey, IconVariant } from "./codepoints";
 
 export interface MagicoonProps {
-  variant: IconVariant;
   icon: IconKey;
+  variant?: IconVariant;
   className?: string;
 }

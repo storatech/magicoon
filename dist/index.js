@@ -1,56 +1,4 @@
 // magicoon_react/Magicoon.tsx
-function _define_property(obj, key, value) {
-    if (key in obj) {
-        Object.defineProperty(obj, key, {
-            value: value,
-            enumerable: true,
-            configurable: true,
-            writable: true
-        });
-    } else {
-        obj[key] = value;
-    }
-    return obj;
-}
-function _object_spread(target) {
-    for(var i = 1; i < arguments.length; i++){
-        var source = arguments[i] != null ? arguments[i] : {};
-        var ownKeys = Object.keys(source);
-        if (typeof Object.getOwnPropertySymbols === "function") {
-            ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function(sym) {
-                return Object.getOwnPropertyDescriptor(source, sym).enumerable;
-            }));
-        }
-        ownKeys.forEach(function(key) {
-            _define_property(target, key, source[key]);
-        });
-    }
-    return target;
-}
-function ownKeys(object, enumerableOnly) {
-    var keys = Object.keys(object);
-    if (Object.getOwnPropertySymbols) {
-        var symbols = Object.getOwnPropertySymbols(object);
-        if (enumerableOnly) {
-            symbols = symbols.filter(function(sym) {
-                return Object.getOwnPropertyDescriptor(object, sym).enumerable;
-            });
-        }
-        keys.push.apply(keys, symbols);
-    }
-    return keys;
-}
-function _object_spread_props(target, source) {
-    source = source != null ? source : {};
-    if (Object.getOwnPropertyDescriptors) {
-        Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
-    } else {
-        ownKeys(Object(source)).forEach(function(key) {
-            Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
-        });
-    }
-    return target;
-}
 import React from "react";
 // magicoon_react/codepoints.ts
 var codePoints = {
@@ -3719,36 +3667,13 @@ var getValue = function(variant, icon) {
     if (!codePoint || isNaN(codePoint)) return "";
     return String.fromCodePoint(codePoint);
 };
-// magicoon_react/styles.ts
-var defaultStyle = {
-    fontFamily: "Magicoon Regular",
-    fontSize: "24px",
-    display: "inline-block",
-    verticalAlign: "middle",
-    lineHeight: "1",
-    whiteSpace: "nowrap",
-    minWidth: "1em",
-    width: "1em",
-    maxWidth: "1em"
-};
-var filledStyle = _object_spread_props(_object_spread({}, defaultStyle), {
-    fontFamily: "Magicoon Filled"
-});
-var lightStyle = _object_spread_props(_object_spread({}, defaultStyle), {
-    fontFamily: "Magicoon Light"
-});
-var styles = {
-    filled: filledStyle,
-    light: lightStyle,
-    regular: defaultStyle
-};
-var styles_default = styles;
 // magicoon_react/Magicoon.tsx
 var MagicoonFilled = function(param) {
     var icon = param.icon, className = param.className;
     var value = getValue("filled", icon);
     return /* @__PURE__ */ React.createElement("span", {
-        style: styles_default.filled,
+        "data-magicoon": true,
+        "data-magicoon-variant": "filled",
         className: className
     }, value);
 };
@@ -3756,7 +3681,8 @@ var MagicoonRegular = function(param) {
     var icon = param.icon, className = param.className;
     var value = getValue("regular", icon);
     return /* @__PURE__ */ React.createElement("span", {
-        style: styles_default.regular,
+        "data-magicoon": true,
+        "data-magicoon-variant": "regular",
         className: className
     }, value);
 };
@@ -3764,12 +3690,13 @@ var MagicoonLight = function(param) {
     var icon = param.icon, className = param.className;
     var value = getValue("light", icon);
     return /* @__PURE__ */ React.createElement("span", {
-        style: styles_default.light,
+        "data-magicoon": true,
+        "data-magicoon-variant": "light",
         className: className
     }, value);
 };
 var Magicoon = function(param) {
-    var variant = param.variant, icon = param.icon, className = param.className;
+    var _param_variant = param.variant, variant = _param_variant === void 0 ? "regular" : _param_variant, icon = param.icon, className = param.className;
     switch(variant){
         case "filled":
             return /* @__PURE__ */ React.createElement(MagicoonFilled, {

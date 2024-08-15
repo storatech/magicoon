@@ -1,6 +1,6 @@
 {
   "name": "@storatech/magicoon",
-  "version": "1.1.2",
+  "version": "2.0.0",
   "description": "Magicoon React",
   "type": "module",
   "main": "dist/index.js",
@@ -11,7 +11,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rm -rf ./dist && tsup magicoon_react --format esm --dts --no-splitting",
+    "prebuild": "rm -rf ./dist",
+    "build": "tsup magicoon_react/index.ts --loader .css=copy --format esm --dts --no-splitting && cp magicoon_react/style.css dist/style.css",
     "package": "npm publish"
   },
   "peerDependencies": {
@@ -32,6 +33,9 @@
     "@swc/core": "^1.5.7",
     "@types/react": "^18.2.57",
     "tsup": "^8.0.2",
-    "typescript": "^4.7.4"
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1"
   }
 }
