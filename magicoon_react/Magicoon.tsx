@@ -30,6 +30,9 @@ const MagicoonLight: FunctionComponent<Omit<MagicoonProps, "variant">> = ({ icon
   );
 };
 
+/**
+ * Make sure you import `@storatech/magicoon/dist/style.css`
+ */
 const Magicoon: FunctionComponent<MagicoonProps> = ({ variant = "regular", icon, className }) => {
   switch (variant) {
     case "filled":

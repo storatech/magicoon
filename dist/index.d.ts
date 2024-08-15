@@ -3668,6 +3668,9 @@ interface MagicoonProps {
     className?: string;
 }
 
+/**
+ * Make sure you import `@storatech/magicoon/dist/style.css`
+ */
 declare const Magicoon: FunctionComponent<MagicoonProps>;
 
 export { type IconKey, type IconVariant, type MagicoonProps, codePoints, Magicoon as default };
