@@ -1,12 +1,15 @@
 {
   "name": "@storatech/magicoon",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "description": "Magicoon React",
   "type": "module",
   "main": "dist/index.js",
   "exports": {
     ".": {
       "import": "./dist/index.js"
+    },
+    "./style.css": {
+      "import": "./dist/style.css"
     }
   },
   "scripts": {
