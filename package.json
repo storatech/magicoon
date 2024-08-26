@@ -1,21 +1,25 @@
 {
   "name": "@storatech/magicoon",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Magicoon React",
   "type": "module",
   "main": "dist/index.js",
   "exports": {
     ".": {
-      "import": "./dist/index.js"
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.global.js"
     },
     "./style.css": {
-      "import": "./dist/style.css"
+      "import": "./dist/style.css",
+      "require": "./dist/style.css"
     }
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prebuild": "rm -rf ./dist",
-    "build": "tsup magicoon_react/index.ts --loader .css=copy --format esm --dts --no-splitting && cp magicoon_react/style.css dist/style.css",
+    "build": "tsup magicoon_react/index.ts --loader .css=copy --format esm,cjs,iife --dts --no-splitting && cp magicoon_react/style.css dist/style.css",
     "package": "npm publish"
   },
   "peerDependencies": {
