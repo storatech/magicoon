@@ -2,7 +2,7 @@ import React, { FunctionComponent } from "react";
 import { MagicoonProps } from "./types";
 import { getValue } from "./get-string";
 
-export const MagicoonFilled: FunctionComponent<Omit<MagicoonProps, "variant">> = ({ icon, className }) => {
+export const MagicoonFilled: FunctionComponent<Omit<MagicoonProps, "variant" | "filled"> & { filled: true }> = ({ icon, className }) => {
   const value = getValue("filled", icon);
 
   return (
@@ -11,7 +11,7 @@ export const MagicoonFilled: FunctionComponent<Omit<MagicoonProps, "variant">> =
     </span>
   );
 };
-export const MagicoonRegular: FunctionComponent<Omit<MagicoonProps, "variant">> = ({ icon, className }) => {
+export const MagicoonRegular: FunctionComponent<Omit<MagicoonProps, "variant" | "filled"> & { filled: false }> = ({ icon, className }) => {
   const value = getValue("regular", icon);
 
   return (
@@ -24,12 +24,11 @@ export const MagicoonRegular: FunctionComponent<Omit<MagicoonProps, "variant">> 
 /**
  * Make sure you import `@storatech/magicoon/dist/style.css`
  */
-export const Magicoon: FunctionComponent<MagicoonProps> = ({ variant = "regular", icon, className }) => {
-  switch (variant) {
-    case "filled":
-      return <MagicoonFilled icon={icon} className={className} />;
-    default:
-      return <MagicoonRegular icon={icon} className={className} />;
+export const Magicoon: FunctionComponent<MagicoonProps> = ({ variant = "regular", filled = false, icon, className }) => {
+  if (filled || variant === "filled") {
+    return <MagicoonFilled icon={icon} className={className} filled />;
   }
+
+  return <MagicoonRegular icon={icon} className={className} filled={false} />;
 };
 
