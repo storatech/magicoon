@@ -2462,6 +2462,7 @@ type IconKey = keyof typeof codePoints[IconVariant];
 interface MagicoonProps {
     icon: IconKey;
     variant?: IconVariant;
+    filled?: boolean;
     className?: string;
 }
 

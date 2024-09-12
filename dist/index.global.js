@@ -4759,6 +4759,7 @@ function _type_of(obj) {
         var icon = param.icon, className = param.className;
         var value = getValue("filled", icon);
         return /* @__PURE__ */ import_react.default.createElement("span", {
+            "data-stora-icon": true,
             "data-magicoon": true,
             "data-magicoon-variant": "filled",
             className: className
@@ -4768,25 +4769,26 @@ function _type_of(obj) {
         var icon = param.icon, className = param.className;
         var value = getValue("regular", icon);
         return /* @__PURE__ */ import_react.default.createElement("span", {
+            "data-stora-icon": true,
             "data-magicoon": true,
             "data-magicoon-variant": "regular",
             className: className
         }, value);
     };
     var Magicoon = function(param) {
-        var _param_variant = param.variant, variant = _param_variant === void 0 ? "regular" : _param_variant, icon = param.icon, className = param.className;
-        switch(variant){
-            case "filled":
-                return /* @__PURE__ */ import_react.default.createElement(MagicoonFilled, {
-                    icon: icon,
-                    className: className
-                });
-            default:
-                return /* @__PURE__ */ import_react.default.createElement(MagicoonRegular, {
-                    icon: icon,
-                    className: className
-                });
+        var _param_variant = param.variant, variant = _param_variant === void 0 ? "regular" : _param_variant, _param_filled = param.filled, filled = _param_filled === void 0 ? false : _param_filled, icon = param.icon, className = param.className;
+        if (filled || variant === "filled") {
+            return /* @__PURE__ */ import_react.default.createElement(MagicoonFilled, {
+                icon: icon,
+                className: className,
+                filled: true
+            });
         }
+        return /* @__PURE__ */ import_react.default.createElement(MagicoonRegular, {
+            icon: icon,
+            className: className,
+            filled: false
+        });
     };
     // magicoon_react/index.ts
     var magicoon_react_default = Magicoon;
