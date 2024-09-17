@@ -1,3 +1,15 @@
+@font-face {
+    font-family: "Magicoon Filled";
+    src: url("https://cdn.stora.mn/static/packages/magicoon/3.2.2/Magicoon-filled.json");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Magicoon Regular";
+    src: url("https://cdn.stora.mn/static/packages/magicoon/3.2.2/Magicoon-regular.json");
+    font-style: normal;
+}
+
 [data-magicoon] {
     font-family: "Magicoon Regular";
     font-size: 24px;
