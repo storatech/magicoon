@@ -2538,6 +2538,7 @@ var MagicoonFilled = function(param) {
     return /* @__PURE__ */ import_react.default.createElement("span", {
         "data-stora-icon": true,
         "data-magicoon": true,
+        "aria-hidden": "true",
         "data-magicoon-variant": "filled",
         className: className
     }, value);
@@ -2548,6 +2549,7 @@ var MagicoonRegular = function(param) {
     return /* @__PURE__ */ import_react.default.createElement("span", {
         "data-stora-icon": true,
         "data-magicoon": true,
+        "aria-hidden": "true",
         "data-magicoon-variant": "regular",
         className: className
     }, value);

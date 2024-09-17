@@ -6,7 +6,7 @@ export const MagicoonFilled: FunctionComponent<Omit<MagicoonProps, "variant" | "
   const value = getValue("filled", icon);
 
   return (
-    <span data-stora-icon data-magicoon data-magicoon-variant="filled" className={className}>
+    <span data-stora-icon data-magicoon aria-hidden="true" data-magicoon-variant="filled" className={className}>
       {value}
     </span>
   );
@@ -15,7 +15,7 @@ export const MagicoonRegular: FunctionComponent<Omit<MagicoonProps, "variant" | 
   const value = getValue("regular", icon);
 
   return (
-    <span data-stora-icon data-magicoon data-magicoon-variant="regular" className={className}>
+    <span data-stora-icon data-magicoon aria-hidden="true" data-magicoon-variant="regular" className={className}>
       {value}
     </span>
   );

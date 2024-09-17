@@ -4761,6 +4761,7 @@ function _type_of(obj) {
         return /* @__PURE__ */ import_react.default.createElement("span", {
             "data-stora-icon": true,
             "data-magicoon": true,
+            "aria-hidden": "true",
             "data-magicoon-variant": "filled",
             className: className
         }, value);
@@ -4771,6 +4772,7 @@ function _type_of(obj) {
         return /* @__PURE__ */ import_react.default.createElement("span", {
             "data-stora-icon": true,
             "data-magicoon": true,
+            "aria-hidden": "true",
             "data-magicoon-variant": "regular",
             className: className
         }, value);
