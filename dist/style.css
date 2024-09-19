@@ -1,18 +1,5 @@
-@font-face {
-    font-family: "Magicoon Filled";
-    src: url("https://cdn.stora.mn/static/packages/magicoon/3.2.4/Magicoon-filled.ttf");
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Magicoon Regular";
-    src: url("https://cdn.stora.mn/static/packages/magicoon/3.2.4/Magicoon-regular.ttf");
-    font-style: normal;
-}
-
 [data-magicoon] {
     font-family: "Magicoon Regular";
-    font-size: 24px;
     font-weight: normal !important;
     display: inline-block;
     vertical-align: middle;
@@ -27,6 +14,14 @@
     -moz-user-select: none !important;
     -ms-user-select: none !important;
     -o-user-select: none !important;
+}
+
+[data-magicoon]:not([class]) {
+    font-size: 24px;
+}
+
+[data-magicoon]:not([className]) {
+    font-size: 24px;
 }
 
 [data-magicoon-variant="filled"] {

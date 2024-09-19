@@ -32,3 +32,4 @@ export const Magicoon: FunctionComponent<MagicoonProps> = ({ variant = "regular"
   return <MagicoonRegular icon={icon} className={className} filled={false} />;
 };
 
+Magicoon.displayName = 'Magicoon'
