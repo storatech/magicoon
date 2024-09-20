@@ -2502,6 +2502,7 @@ var Magicoon = function(param) {
         filled: false
     });
 };
+Magicoon.displayName = "Magicoon";
 // magicoon_react/index.ts
 var magicoon_react_default = Magicoon;
 export { magicoon_react_default as default };

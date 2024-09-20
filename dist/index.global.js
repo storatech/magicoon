@@ -4792,6 +4792,7 @@ function _type_of(obj) {
             filled: false
         });
     };
+    Magicoon.displayName = "Magicoon";
     // magicoon_react/index.ts
     var magicoon_react_default = Magicoon;
 })(); /*! Bundled license information:
