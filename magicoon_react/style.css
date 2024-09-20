@@ -1,3 +1,15 @@
+@font-face {
+    font-family: "Magicoon Filled";
+    src: url("https://cdn.stora.mn/static/packages/magicoon/3.3.0/Magicoon-filled.ttf");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Magicoon Regular";
+    src: url("https://cdn.stora.mn/static/packages/magicoon/3.3.0/Magicoon-regular.ttf");
+    font-style: normal;
+}
+
 [data-magicoon] {
     font-family: "Magicoon Regular";
     font-weight: normal !important;
@@ -17,6 +29,10 @@
 }
 
 [data-magicoon]:not([class]) {
+    font-size: 24px;
+}
+
+[data-magicoon]:not([style]) {
     font-size: 24px;
 }
 

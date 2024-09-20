@@ -32,6 +32,10 @@
     font-size: 24px;
 }
 
+[data-magicoon]:not([style]) {
+    font-size: 24px;
+}
+
 [data-magicoon]:not([className]) {
     font-size: 24px;
 }
