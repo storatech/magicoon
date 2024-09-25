@@ -28,18 +28,6 @@
     -o-user-select: none !important;
 }
 
-[data-magicoon]:not([class]) {
-    font-size: 24px;
-}
-
-[data-magicoon]:not([style]) {
-    font-size: 24px;
-}
-
-[data-magicoon]:not([className]) {
-    font-size: 24px;
-}
-
 [data-magicoon-variant="filled"] {
     font-family: "Magicoon Filled";
 }
