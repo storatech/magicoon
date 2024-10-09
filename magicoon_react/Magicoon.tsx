@@ -11,6 +11,7 @@ export const MagicoonFilled: FunctionComponent<Omit<MagicoonProps, "variant" | "
     </span>
   );
 };
+
 export const MagicoonRegular: FunctionComponent<Omit<MagicoonProps, "variant" | "filled"> & { filled: false }> = ({ icon, className }) => {
   const value = getValue("regular", icon);
 
@@ -22,7 +23,7 @@ export const MagicoonRegular: FunctionComponent<Omit<MagicoonProps, "variant" | 
 };
 
 /**
- * Make sure you import `@storatech/magicoon/dist/style.css`
+ * Make sure you import `@storatech/magicoon/style.css`
  */
 export const Magicoon: FunctionComponent<MagicoonProps> = ({ variant = "regular", filled = false, icon, className }) => {
   if (filled || variant === "filled") {
