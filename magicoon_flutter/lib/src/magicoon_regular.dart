@@ -836,8 +836,8 @@ class MagicoonRegular {
   static const IconData coupon_star = IconData(0xf436, fontFamily: _fontFamily, fontPackage: _fontPackage);
   static const IconData coupon_percent = IconData(0xf437, fontFamily: _fontFamily, fontPackage: _fontPackage);
   static const IconData coupon_heart = IconData(0xf438, fontFamily: _fontFamily, fontPackage: _fontPackage);
-  static const IconData copy2right_square = IconData(0xf439, fontFamily: _fontFamily, fontPackage: _fontPackage);
-  static const IconData copy2right_circle = IconData(0xf43a, fontFamily: _fontFamily, fontPackage: _fontPackage);
+  static const IconData copyright_square = IconData(0xf439, fontFamily: _fontFamily, fontPackage: _fontPackage);
+  static const IconData copyright_circle = IconData(0xf43a, fontFamily: _fontFamily, fontPackage: _fontPackage);
   static const IconData copy = IconData(0xf43b, fontFamily: _fontFamily, fontPackage: _fontPackage);
   static const IconData copy_plus = IconData(0xf43c, fontFamily: _fontFamily, fontPackage: _fontPackage);
   static const IconData copy_check = IconData(0xf43d, fontFamily: _fontFamily, fontPackage: _fontPackage);
