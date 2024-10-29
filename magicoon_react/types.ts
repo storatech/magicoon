@@ -5,4 +5,5 @@ export interface MagicoonProps {
   variant?: IconVariant
   filled?: boolean
   className?: string
+  css?: React.CSSProperties
 }

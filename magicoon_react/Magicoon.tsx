@@ -3,7 +3,7 @@ import { MagicoonProps } from './types'
 import { getValue } from './get-string'
 import { MagicoonContext } from './context'
 
-const MagicoonComponent: FunctionComponent<MagicoonProps> = ({ variant: propVariant, filled: propFilled, icon, className }) => {
+const MagicoonComponent: FunctionComponent<MagicoonProps> = ({ css, variant: propVariant, filled: propFilled, icon, className }) => {
   const contextProps = useContext(MagicoonContext)
 
   const variant = propVariant ?? contextProps.variant ?? ((propFilled ?? contextProps.filled ?? false) ? 'filled' : 'regular')
@@ -11,7 +11,7 @@ const MagicoonComponent: FunctionComponent<MagicoonProps> = ({ variant: propVari
   const value = getValue(variant, icon)
 
   return (
-    <span data-stora-icon data-magicoon aria-hidden='true' data-magicoon-variant={variant} className={[className ?? '', contextProps.className ?? ''].join(' ')}>
+    <span style={css} data-stora-icon data-magicoon aria-hidden='true' data-magicoon-variant={variant} className={[className ?? '', contextProps.className ?? ''].join(' ')}>
       {value}
     </span>
   )

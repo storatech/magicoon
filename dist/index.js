@@ -2511,13 +2511,14 @@ import { createContext } from "react";
 var MagicoonContext = createContext({});
 // magicoon_react/Magicoon.tsx
 var MagicoonComponent = function(param) {
-    var propVariant = param.variant, propFilled = param.filled, icon = param.icon, className = param.className;
+    var css = param.css, propVariant = param.variant, propFilled = param.filled, icon = param.icon, className = param.className;
     var contextProps = useContext(MagicoonContext);
     var _ref, _ref1;
     var variant = (_ref1 = propVariant !== null && propVariant !== void 0 ? propVariant : contextProps.variant) !== null && _ref1 !== void 0 ? _ref1 : ((_ref = propFilled !== null && propFilled !== void 0 ? propFilled : contextProps.filled) !== null && _ref !== void 0 ? _ref : false) ? "filled" : "regular";
     var value = getValue(variant, icon);
     var _contextProps_className;
     return /* @__PURE__ */ React.createElement("span", {
+        style: css,
         "data-stora-icon": true,
         "data-magicoon": true,
         "aria-hidden": "true",

@@ -1,4 +1,4 @@
-import React from 'react';
+import React$1 from 'react';
 
 interface MagicoonContextProps {
     variant?: 'filled' | 'regular';
@@ -2512,10 +2512,11 @@ interface MagicoonProps {
     variant?: IconVariant;
     filled?: boolean;
     className?: string;
+    css?: React.CSSProperties;
 }
 
-declare const Magicoon: React.FunctionComponent<MagicoonProps> & {
-    Context: React.Context<MagicoonContextProps>;
+declare const Magicoon: React$1.FunctionComponent<MagicoonProps> & {
+    Context: React$1.Context<MagicoonContextProps>;
     displayName: string;
 };
 
