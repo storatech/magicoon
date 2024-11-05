@@ -2535,4 +2535,4 @@ var Magicoon = Object.assign(MagicoonComponent, {
 });
 // magicoon_react/index.ts
 var magicoon_react_default = Magicoon;
-export { magicoon_react_default as default };
+export { codePoints, magicoon_react_default as default };

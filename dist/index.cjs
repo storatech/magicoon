@@ -64,6 +64,9 @@ var __toCommonJS = function(mod) {
 // magicoon_react/index.ts
 var magicoon_react_exports = {};
 __export(magicoon_react_exports, {
+    codePoints: function() {
+        return codePoints;
+    },
     default: function() {
         return magicoon_react_default;
     }
@@ -2606,3 +2609,7 @@ var Magicoon = Object.assign(MagicoonComponent, {
 });
 // magicoon_react/index.ts
 var magicoon_react_default = Magicoon;
+// Annotate the CommonJS export names for ESM import in node:
+0 && (module.exports = {
+    codePoints: codePoints
+});
