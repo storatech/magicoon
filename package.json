@@ -1,6 +1,6 @@
 {
   "name": "@storatech/magicoon",
-  "version": "4.1.0",
+  "version": "5.0.0",
   "description": "Magicoon React",
   "type": "module",
   "main": "dist/index.js",
