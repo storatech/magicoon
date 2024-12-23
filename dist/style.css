@@ -1,14 +1,15 @@
 @font-face {
     font-family: "Magicoon Filled";
-    src: url("https://cdn.stora.mn/static/packages/magicoon/5.0.1/Magicoon-filled.ttf");
+    src: url("https://cdn.stora.mn/static/packages/magicoon/5.1.0/Magicoon-filled.ttf");
     font-style: normal;
 }
 
 @font-face {
     font-family: "Magicoon Regular";
-    src: url("https://cdn.stora.mn/static/packages/magicoon/5.0.1/Magicoon-regular.ttf");
+    src: url("https://cdn.stora.mn/static/packages/magicoon/5.1.0/Magicoon-regular.ttf");
     font-style: normal;
 }
+
 
 [data-magicoon] {
     font-family: "Magicoon Regular";
