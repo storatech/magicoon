@@ -1,5 +1,8 @@
 import React$1 from 'react';
 
+/**
+ * @deprecated Switching to new icon system as of February 2025
+ */
 interface MagicoonContextProps {
     variant?: 'filled' | 'regular';
     filled?: boolean;
@@ -2517,6 +2520,9 @@ declare const codePoints: {
 type IconVariant = keyof typeof codePoints;
 type IconKey = keyof typeof codePoints[IconVariant];
 
+/**
+ * @deprecated Switching to new icon system as of February 2025
+ */
 interface MagicoonProps {
     icon: IconKey;
     variant?: IconVariant;
@@ -2525,6 +2531,9 @@ interface MagicoonProps {
     css?: React.CSSProperties;
 }
 
+/**
+ * @deprecated Switching to new icon system as of February 2025
+ */
 declare const Magicoon: React$1.FunctionComponent<MagicoonProps> & {
     Context: React$1.Context<MagicoonContextProps>;
     displayName: string;

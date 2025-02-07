@@ -3,6 +3,9 @@ import { MagicoonProps } from './types'
 import { getValue } from './get-string'
 import { MagicoonContext } from './context'
 
+/**
+ * @deprecated Switching to new icon system as of February 2025
+ */
 const MagicoonComponent: FunctionComponent<MagicoonProps> = ({ css, variant: propVariant, filled: propFilled, icon, className }) => {
   const contextProps = useContext(MagicoonContext)
 
@@ -17,6 +20,9 @@ const MagicoonComponent: FunctionComponent<MagicoonProps> = ({ css, variant: pro
   )
 }
 
+/**
+ * @deprecated Switching to new icon system as of February 2025
+ */
 export const Magicoon = Object.assign(MagicoonComponent, {
   Context: MagicoonContext,
   displayName: 'Magicoon'

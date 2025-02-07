@@ -1,4 +1,6 @@
-# Stora Magicoon icons
+# "DEPRECATED" Stora Magicoon icons
+
+> Switching to new icon system as of February 2025
 
 ## Prerequisites
 
